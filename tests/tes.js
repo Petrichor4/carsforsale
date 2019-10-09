@@ -17,7 +17,7 @@ var cars =
             .expect.element('@signIn').to.contain.text('Tom J')
         },
         'search': browser => {
-            //using the search feature to look for a specific car
+            //using the search feature to look for a specific car that is less than $5,000
             cars.search()
                 .useXpath()
             cars.waitForElementVisible('(//div[@class="pricing__price"])[2]')
