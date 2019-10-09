@@ -15,5 +15,11 @@ var cars =
             }
             cars.signIn(data)
             .expect.element('@signIn').to.contain.text('Tom J')
+        },
+        'search': browser =>{
+            //
+        },
+        'filter': browser =>{
+            //
         }
     }
