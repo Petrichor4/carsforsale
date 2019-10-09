@@ -13,7 +13,7 @@ var commands = {
             .pause(3000)
         return this
     },
-    search: function (car) {
+    search: function () {
         this
             .waitForElementVisible('[value="Subaru"]')
             .click('[value="Subaru"]')
