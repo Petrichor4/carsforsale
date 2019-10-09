@@ -12,6 +12,23 @@ var commands = {
             .click('[value="Login"]')
             .pause(3000)
         return this
+    },
+    search: function (car) {
+        this
+            .waitForElementVisible('[value="Subaru"]')
+            .click('[value="Subaru"]')
+            .click('[value="Forester"]')
+            .useXpath()
+            .click('(//option[@value="5000"])[2]')
+            .useCss()
+            .click('@search')
+            .expect.element('[id="results-banner-page-title"]').to.contain.text('Subaru Forester')
+        this
+            .useXpath()
+            .click('(//h4[@class="display-inline-block"])[1]')
+            // .pause(3000)
+            .useCss()
+        return this
     }
 }
 
@@ -27,7 +44,7 @@ module.exports = {
         signIn2: { selector: '(//a[@href="/profile"])[2]', locateStrategy: 'xpath' },
         userI: '[id="profileLoginEmail"]',
         passI: '[id="profileLoginPassword"]',
-        user:'tjones@msn.com',
+        user: 'tjones@msn.com',
         pass: 'QApasstest',
 
     }

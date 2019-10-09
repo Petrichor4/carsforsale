@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
-            tests="1">
+            tests="2">
 
   <testsuite name="tes"
     errors="0" failures="0" hostname="" id="" package="tes" skipped="0"
-    tests="1" time="9.159" timestamp="">
+    tests="2" time="19.93" timestamp="">
   
-    <testcase name="sign in" classname="tes" time="9.159" assertions="3">
+    <testcase name="search" classname="tes" time="15.99" assertions="4">
 
     
 
     
 
     
+
+    
+    </testcase>
+  
+    <testcase name="filter" classname="tes" time="3.933" assertions="0">
     </testcase>
   
 

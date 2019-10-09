@@ -16,10 +16,18 @@ var cars =
             cars.signIn(data)
             .expect.element('@signIn').to.contain.text('Tom J')
         },
-        'search': browser =>{
-            //
+        'search': browser => {
+            //using the search feature to look for a specific car
+            cars.search()
+                .useXpath()
+            cars.waitForElementVisible('(//div[@class="pricing__price"])[2]')
+            cars.getText('(//div[@class="pricing__price"])[2]', function (result) {
+                let price = (result.value)
+                cars.verify.ok(price < '$5,000', `The ID (${price})is less than 5000`)
+            })
+
         },
-        'filter': browser =>{
+        'filter': browser => {
             //
         }
     }
