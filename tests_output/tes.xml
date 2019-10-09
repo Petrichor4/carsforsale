@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="tes"
+    errors="1" failures="0" hostname="" id="" package="tes" skipped="3"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+
+  
+    
+    <testcase
+      name="sign in" classname="tes">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="search" classname="tes">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="filter" classname="tes">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
