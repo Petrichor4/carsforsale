@@ -3,6 +3,7 @@ var cars =
         beforeEach: browser => {
             cars = browser.page.carObjects()
             cars.navigate()
+            .api.maximizeWindow()
         },
         after: browser => {
             browser.end()
@@ -21,6 +22,5 @@ var cars =
         },
         'filter': browser =>{
             //
-            
         }
     }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="3"
+            failures="0"
+            tests="1">
+
+  <testsuite name="filter"
+    errors="3" failures="0" hostname="" id="" package="filter" skipped="0"
+    tests="1" time="0.03300" timestamp="">
+  
+    <testcase name="Filter Test" classname="filter" time="0.03300" assertions="0">
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
