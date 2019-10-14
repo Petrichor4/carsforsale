@@ -26,12 +26,10 @@ var commands = {
         this
             .useXpath()
             .click('(//h4[@class="display-inline-block"])[1]')
-            // .pause(3000)
             .useCss()
         return this
     }
 }
-
 module.exports = {
     url: 'https://www.carsforsale.com',
     commands: [commands],

@@ -5,9 +5,9 @@
 
   <testsuite name="tes"
     errors="0" failures="0" hostname="" id="" package="tes" skipped="0"
-    tests="3" time="19.58" timestamp="">
+    tests="3" time="29.43" timestamp="">
   
-    <testcase name="sign in" classname="tes" time="7.932" assertions="3">
+    <testcase name="sign in" classname="tes" time="12.29" assertions="3">
 
     
 
@@ -16,7 +16,7 @@
     
     </testcase>
   
-    <testcase name="search" classname="tes" time="9.766" assertions="4">
+    <testcase name="search" classname="tes" time="14.84" assertions="4">
 
     
 
@@ -27,7 +27,7 @@
     
     </testcase>
   
-    <testcase name="filter" classname="tes" time="1.882" assertions="0">
+    <testcase name="filter" classname="tes" time="2.303" assertions="0">
     </testcase>
   
 
