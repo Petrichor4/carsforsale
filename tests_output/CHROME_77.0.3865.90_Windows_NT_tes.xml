@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
-            failures="0"
-            tests="3">
+<testsuites errors="5"
+            failures="1"
+            tests="1">
 
   <testsuite name="tes"
-    errors="0" failures="0" hostname="" id="" package="tes" skipped="0"
-    tests="3" time="15.42" timestamp="">
+    errors="5" failures="1" hostname="" id="" package="tes" skipped="0"
+    tests="1" time="35.74" timestamp="">
   
-    <testcase name="sign in" classname="tes" time="10.40" assertions="3">
+    <testcase name="filter" classname="tes" time="35.74" assertions="2">
 
-    
+      <failure message="Expected element &lt;(//h4[@itempropname=&#34;name&#34;])[1]&gt; text to contain: &#34;2020 Buick Enclave&#34; - element was not found - expected [0;32m&#34;present&#34;[0m but got: [0;31m&#34;not present&#34;[0m">    at Page.filter (C:\Users\makil\DevMountain\carsforsale\pageObjects\carObjects.js:56:21)
+    at Object.filter (C:\Users\makil\DevMountain\carsforsale\tests\tes.js:33:18)</failure>
 
-    
-
-    
-    </testcase>
-  
-    <testcase name="search" classname="tes" time="2.369" assertions="0">
-    </testcase>
-  
-    <testcase name="filter" classname="tes" time="2.645" assertions="0">
+    <failure message="    at Page.filter (C:\Users\makil\DevMountain\carsforsale\pageObjects\carObjects.js:56:21)">    at Object.filter (C:\Users\makil\DevMountain\carsforsale\tests\tes.js:33:18)</failure>
     </testcase>
   
 

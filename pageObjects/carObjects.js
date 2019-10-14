@@ -29,6 +29,32 @@ var commands = {
             // .pause(3000)
             .useCss()
         return this
+    },
+
+    scrollDownBy: function (pixels) { //custom command for scrolling down
+        this.api.execute(`window.scrollBy(0, ${pixels})`)
+        return this
+    },
+
+    filter: function (car) {
+        this
+            .waitForElementVisible('@advSearch')
+            .click('@advSearch')
+            .click('#searchRadius')
+            .click('[value="25"]')
+            .clearValue('@zip')
+            .setValue('@zip', '22314')
+            .click('@newOrUsed')
+            .click('#condition-New-label')
+            .click('@newOrUsed')
+            .click('#Make')
+            .click('[value="Buick"]')
+            .click('#Model')
+            .click('[value="Enclave"]')
+            .click('#perform-advanced-search')
+            .useXpath()
+            .expect.element('(//h4[@itempropname="name"])[1]').to.contain.text('2020 Buick Enclave')
+        return this
     }
 }
 
@@ -46,6 +72,9 @@ module.exports = {
         passI: '[id="profileLoginPassword"]',
         user: 'tjones@msn.com',
         pass: 'QApasstest',
+        advSearch: { selector: '(//a[@href="/advanced-search"])[1]', locateStrategy: 'xpath' },
+        zip: '#zipcode',
+        newOrUsed: '[data-parent="#accordionCondition"]'
 
     }
 }
