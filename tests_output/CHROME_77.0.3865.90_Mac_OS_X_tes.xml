@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
-            failures="0"
-            tests="3">
+<testsuites errors="1"
+            failures="1"
+            tests="1">
 
   <testsuite name="tes"
-    errors="0" failures="0" hostname="" id="" package="tes" skipped="0"
-    tests="3" time="29.43" timestamp="">
+    errors="1" failures="1" hostname="" id="" package="tes" skipped="0"
+    tests="1" time="39.27" timestamp="">
   
-    <testcase name="sign in" classname="tes" time="12.29" assertions="3">
+    <testcase name="filter" classname="tes" time="39.27" assertions="4">
 
     
 
     
 
-    
-    </testcase>
-  
-    <testcase name="search" classname="tes" time="14.84" assertions="4">
+      <failure message="Expected element &lt;(//li[@class=&#34;specs-miles-container hidden-xs&#34;])[1]&gt; text to contain: &#34;New&#34; - expected [0;32m&#34;contain &#39;New&#39;&#34;[0m but got: [0;31m&#34;Used&#34;[0m">    at Object.filter (/Users/Josephstone/DevMountain/carsforsale/tests/tes.js:55:25)</failure>
 
     
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="filter" classname="tes" time="2.303" assertions="0">
     </testcase>
   
 

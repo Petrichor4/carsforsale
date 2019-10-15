@@ -39,20 +39,22 @@ var commands = {
         this
             .waitForElementVisible('@advSearch')
             .click('@advSearch')
-            .click('#searchRadius')
-            .click('[value="25"]')
+            // .scrollDownBy()
+            .useXpath()
+            .click('(//option[@value="50"])')
+            .useCss()
             .clearValue('@zip')
             .setValue('@zip', '22314')
             .click('@newOrUsed')
-            .click('#condition-New-label')
-            .click('@newOrUsed')
-            .click('#Make')
-            .click('[value="Buick"]')
-            .click('#Model')
-            .click('[value="Enclave"]')
-            .click('#perform-advanced-search')
             .useXpath()
-            .expect.element('(//h4[@itempropname="name"])[1]').to.contain.text('2020 Buick Enclave')
+            .click('//label[@id="condition-New-label"]')
+            .useCss()
+            .pause(1000)
+            .click('@newOrUsed')
+            .assert.containsText('@newOrUsed', 'New')
+            .click('[value="Buick"]')
+            .click('[value="Enclave"]')
+            .click('[id="perform-advanced-search"]')
         return this
     }
 }
@@ -73,6 +75,5 @@ module.exports = {
         advSearch: { selector: '(//a[@href="/advanced-search"])[1]', locateStrategy: 'xpath' },
         zip: '#zipcode',
         newOrUsed: '[data-parent="#accordionCondition"]'
-
     }
 }
