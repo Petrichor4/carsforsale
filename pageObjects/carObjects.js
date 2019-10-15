@@ -52,6 +52,8 @@ var commands = {
             .pause(1000)
             .click('@newOrUsed')
             .assert.containsText('@newOrUsed', 'New')
+            .api.saveScreenshot('./screenshots/advancedSearch.png')
+            this
             .click('[value="Buick"]')
             .click('[value="Enclave"]')
             .click('[id="perform-advanced-search"]')
